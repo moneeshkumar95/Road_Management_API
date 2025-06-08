@@ -158,23 +158,32 @@ docker-compose up --build
 ### 1. Upload Initial Networks
 
 **Upload Network 1 (Aying):**
-
+![Image Alt](https://github.com/moneeshkumar95/Road_Management_API/blob/main/sample_images/Screenshot%20From%202025-06-08%2019-47-44.png?raw=true)
 
 **Upload Network 2 (Bayrischzell v1.0):**
-
+![Image Alt](https://github.com/moneeshkumar95/Road_Management_API/blob/main/sample_images/Screenshot%20From%202025-06-08%2018-46-26.png?raw=true)
 
 ### 2. Update Network
 
 **Update Bayrischzell to v1.1:**
-
+![Image Alt](https://github.com/moneeshkumar95/Road_Management_API/blob/main/sample_images/Screenshot%20From%202025-06-08%2018-47-05.png?raw=true)
 
 ### 3. Retrieve Network Edges
 
 **Get current version:**
+![Image Alt](https://github.com/moneeshkumar95/Road_Management_API/blob/main/sample_images/Screenshot%20From%202025-06-08%2018-48-07.png?raw=true)
 
+![Image Alt](https://github.com/moneeshkumar95/Road_Management_API/blob/main/sample_images/Screenshot%20From%202025-06-08%2020-02-49.png?raw=true)
 
 ### 4. List Networks
+![Image Alt](https://github.com/moneeshkumar95/Road_Management_API/blob/main/sample_images/Screenshot%20From%202025-06-08%2019-58-29.png?raw=true)
 
+
+### Bayrischzell 1.0
+![Image Alt](https://github.com/moneeshkumar95/Road_Management_API/blob/main/sample_images/Screenshot%20From%202025-06-08%2019-50-48.png?raw=true)
+
+### Bayrischzell 1.1(After Update)
+![Image Alt](https://github.com/moneeshkumar95/Road_Management_API/blob/main/sample_images/Screenshot%20From%202025-06-08%2019-50-57.png?raw=true)
 
 ## Task Implementation Details
 

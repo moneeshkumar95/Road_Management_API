@@ -171,7 +171,7 @@ docker-compose up --build
 ### 3. Retrieve Network Edges
 
 **Get current version:**
-![Image Alt](https://github.com/moneeshkumar95/Road_Management_API/blob/main/sample_images/Screenshot%20From%202025-06-08%2018-48-07.png?raw=true)
+![Image Alt](https://github.com/moneeshkumar95/Road_Management_API/blob/main/sample_images/Screenshot%20From%202025-06-08%2020-06-51.png?raw=true)
 
 ![Image Alt](https://github.com/moneeshkumar95/Road_Management_API/blob/main/sample_images/Screenshot%20From%202025-06-08%2020-02-49.png?raw=true)
 

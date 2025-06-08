@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgis/postgis:14-3.2
+    environment:
+      POSTGRES_DB: edigital
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5434:5432"
+    volumes:
+      # - postgres_data:/var/lib/postgresql/data
+      - ./init_scripts/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  api:
+      build: .
+      container_name: edigital_api
+      ports:
+        - "8000:8000"
+      environment:
+        DATABASE_URL: postgresql+asyncpg://postgres:postgres@postgres:5432/edigital
+        JWT_SECRET_KEY: e3dfe8a6a4cf8a6e7a28b9799d7d4f2c3b07ae5a85f2eac8b7d9b68e451efb2f
+        JWT_ALGORITHM: HS256
+      depends_on:
+        postgres:
+          condition: service_healthy
+      volumes:
+        - .:/app
+      command: uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
+      restart: unless-stopped
+
+volumes:
+  postgres_data:

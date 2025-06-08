@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "edgital-task"
+version = "0.1.0"
+description = "Road Management API"
+authors = ["Moneesh"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+# Add core dependencies here
+python = "^3.12"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.3"
+sqlalchemy = "^2.0.41"
+geoalchemy2 = "^0.17.1"
+shapely = "^2.1.1"
+asyncpg = "^0.30.0"
+python-multipart = "^0.0.20"
+pyjwt = "^2.10.1"
+uvloop = "^0.21.0"
+pydantic-settings = "^2.9.1"
+sqlmodel = "^0.0.24"
+bcrypt = "4.0.1"
+pydantic = {extras = ["email"], version = "^2.11.5"}
+cryptography = "^45.0.3"
+passlib = "^1.7.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
